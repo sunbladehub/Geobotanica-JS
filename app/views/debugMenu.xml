@@ -1,0 +1,11 @@
+<Alloy>
+	<Window onClose="doWinClose" navBarHidden="true"> <!-- navBarHidden ensures window is heavyweight -->
+		<Label class="title" top="5%">Debug Menu</Label>
+		<View layout="vertical" top="40%" width="80%" backgroundColor="#111">
+			<Button id="btnDeleteData" title="Delete Data" onClick="doClick"/>
+			<Button id="btnResetDb" title="Reset Database" onClick="doClick"/>
+			<Button id="btnDeleteDb" title="Delete Database" onClick="doClick"/>
+			<Button platform="ios" id="btnBack" title="Back" onClick="doClick"/>
+		</View> 
+	</Window>
+</Alloy>

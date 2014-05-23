@@ -1,0 +1,5 @@
+<Alloy>
+	<Window onOpen="doWinOpen" onPostlayout="doPostlayout" onFocus="doFocus" onClose="doWinClose" onClick="doClick" navBarHidden="true" fullscreen="true"> <!-- navBarHidden ensures window is heavyweight -->
+	</Window>
+	<Require id="cameraOverlay" src="cameraOverlay"/>
+</Alloy>

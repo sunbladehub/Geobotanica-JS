@@ -1,0 +1,12 @@
+<Alloy>
+	<!-- <Collection src="Profile"> -->
+	<Window onClose="doWinClose" navBarHidden="true"> <!-- navBarHidden ensures window is heavyweight -->
+		<Label class='title'>Select Profile</Label>
+		<View id='view' layout='vertical' top="40%">  <!-- paddingTop="5%" --> 
+		</View>
+	</Window>
+</Alloy>
+
+
+
+

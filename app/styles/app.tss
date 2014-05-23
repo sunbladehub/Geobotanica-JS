@@ -1,0 +1,98 @@
+// You can create a global style file, called app.tss, which applies all styles defined inside it to all views
+
+// This is applied to all Windows
+"Window": {
+	backgroundColor: "#000",
+	// onClick: "doClick", // DOESN'T WORK
+	// backgroundColor: "#111",
+	// navBarHidden: true, // BAD: causes splash screen to be root window (back button goes back to splash screen)
+	// androidback: fxn,
+	// orientationModes: [
+	    // Ti.UI.PORTRAIT // = 1
+	    // ,Ti.UI.LANDSCAPE_LEFT // = 2 (TODO: Disabling both Landscape modes suppresses orientation events-> ignore for now)
+	    // ,Ti.UI.UPSIDE_PORTRAIT // = 3 (DOES NOT CAUSE CAMERA TO CRASH ON ROTATION)
+	    // ,Ti.UI.LANDSCAPE_RIGHT // = 4
+	// ]
+}
+"View": {
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE	
+}
+
+// This is applied to all Buttons in all views
+"Button": {
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+    center: "50%",
+    // color: 'white',
+    // textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    // backgroundColor: 'transparent',
+    font: {
+  		fontFamily:'Helvetica',
+	    fontSize: '18sp',
+	    fontStyle: 'normal',
+	    fontWeight: 'normal'
+    },
+}
+
+// This is applied to all Labels in all views
+"Label": {
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+    color: 'white',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    backgroundColor: 'transparent',
+    font: {
+  		fontFamily:'Helvetica',
+	    fontSize: '18sp',
+	    fontStyle: 'normal',	// normal or italic
+	    fontWeight: 'normal'		// normal or bold
+    }	
+}
+
+// This is applied to any element with the class attribute assigned to "container" 
+".title": { // DOESN'T WORK FOR DYNAMICALLY CREATED ELEMENTS
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	top:"5%",
+    font: {
+	    fontSize: '24sp',
+	    fontWeight: 'bold'
+    }	
+}
+
+// This is only applied to an element with the id attribute assigned to "title"
+// "#title": { //DOESN'T WORK FOR DYNAMICALLY CREATED BTNS
+	// textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    // font: {
+	    // fontSize: '24sp',
+	    // fontWeight: 'bold'
+    // }	
+// }
+
+"Switch": { // TODO: Fix for iPhone (checkbox DNE + no text with checkbox, see docs)
+	right: "5%",
+    width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	style: Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
+	textAlign:Ti.UI.TEXT_ALIGNMENT_LEFT
+}
+
+"TextField": { 
+	width: "80%",
+	height: Ti.UI.SIZE,
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED
+}
+
+
+
+// 'aqua', 'black', 'blue', 'brown', 'cyan', 'darkgray', 'fuchsia', 'gray', 'green', 'lightgray', 'lime', 'magenta',
+ // 'maroon', 'navy', 'olive', 'orange', 'pink', 'purple', 'red', 'silver', 'teal', 'white', 'yellow'.
+
+// // iPhone
+// "Label[platform=ios formFactor=handheld]": {
+    // text: 'iPhone'
+// },
+// // Android handheld and tablet devices
+// "Label[platform=android]": { 
+    // text: 'Android'
+// },

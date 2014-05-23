@@ -1,0 +1,6 @@
+<Alloy>
+	<Window onOpen="doWinOpen" onPostlayout="doPostlayout" onFocus="doFocus" onClose="doWinClose" backgroundColor="transparent" navBarHidden="true"> <!-- navBarHidden ensures window is heavyweight -->
+		<Widget id="overlay" src="overlay">
+		<Button id="btnCapture" title="Capture" width="100dp" bottom="20dp" onClick="doClick"/>
+	</Window>
+</Alloy>

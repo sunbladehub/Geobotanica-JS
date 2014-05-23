@@ -1,0 +1,14 @@
+<Alloy>
+	<!-- <Window onOpen="doWinOpen" onClose="doWinClose" navBarHidden="true"> --> <!-- THROWS ERROR, EVENTS UNAVAILABLE-->
+	<View id="viewUnder" width="100%" height="100%" onPostlayout="doPostlayout" onFocus="doFocus" onClick="doClick">
+	</View>
+	<View id="viewContainer" width="100%" height="100%" onClick="doClick">
+		<View id="viewGps" class="viewBorder" bottom="100dp" left="10dp">
+			<View class="viewMargin">
+				<Button id="btnGps" title="GPS Update" width="100dp" onClick="doClick"/>
+				<Label id="txtGps" textAlign="TEXT_ALIGNMENT_LEFT">No GPS coordinates...</Label>
+			</View>
+		</View>
+	</View>
+	<!-- <Window> -->
+</Alloy>

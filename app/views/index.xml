@@ -1,5 +1,12 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+	<Window onClose="doWinClose" navBarHidden="true"> --> <!-- navBarHidden ensures window is heavyweight -->
+		<Label class="title" top="5%">Geobotanica</Label>
+		<View layout="vertical" top="40%" width="80%">
+			<Button id="btnWelcome" title="Welcome" onClick="doClick"/> 
+			<Button id="btnCamera" title="Camera" onClick="doClick"/>
+			<!-- <Button id="btnGallery" title="Photo Gallery" onClick="doClick"/> -->
+			<Button platform='android' id="btnQuit" title="Quit" onClick="doClick"/>
+		</View> 
+		<Button id="btnDebugMenu" title="Debug Menu" bottom="5%" width="80%" opacity="0.6" onClick="doClick"/>
 	</Window>
 </Alloy>

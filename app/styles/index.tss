@@ -1,8 +1,25 @@
-".container": {
-	backgroundColor:"white"
-},
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000"
-} 
+// ".container": {
+	// backgroundColor:"black"
+// },
+// "Label": {
+	// width: "80%",
+	// height: Ti.UI.SIZE,
+	// color: "#FFF"
+// } 
+
+
+// Any device that does not fit any of the below platforms 
+// "Label": {
+    // backgroundColor: "#fff",
+    // text: 'Generic'
+// },
+// // iPhone
+// "Label[platform=ios formFactor=handheld]": {
+    // backgroundColor: "#f00",
+    // text: 'iPhone'
+// },
+// // Android handheld and tablet devices
+// "Label[platform=android]": { 
+    // backgroundColor: "#00f",
+    // text: 'Android'
+// }

@@ -1,0 +1,25 @@
+<Alloy>
+	<Window onClose="doWinClose" navBarHidden="true"> <!-- navBarHidden ensures window is heavyweight -->
+		<Label class="title">New Profile</Label>
+		<View id="view" layout="vertical" top="30%" width="80%" backgroundColor="#111">  <!-- paddingTop="5%" --> 
+			<View height="10dp"/> <!-- Padding -->
+			<Label width="Ti.UI.FILL" textAlign="Ti.UI.TEXT_ALIGNMENT_LEFT">Nickname:</Label>
+			<!-- <TextField id="txtFldName" onChange="doTxtFldChange"/> -->
+			<TextField id="txtFldName"/>
+			<View height="10dp"/> <!-- Padding -->
+			<View width="Ti.UI.FILL" backgroundColor="#222">
+				<Label>Passphrase:</Label>
+				<View width="5dp"/> <!-- Padding -->
+        		<!-- <Switch value="false" titleOn="On" titleOff="Off" left="10%" onChange="doTogglePW"/> -->
+        		<Switch id="cBoxPW" value="false" onChange="doCBoxChange"/>
+			</View>
+			<!-- <TextField id="txtFldPW" enabled="false" passwordMask="true" onChange="doTxtFldChange"/> -->
+			<TextField id="txtFldPW" visible="false" passwordMask="true"/>
+			<View height="10dp"/>
+		</View>
+		<View layout="vertical" bottom="5%" width="80%" backgroundColor="#111">
+			<Button id="btnOK" title="Create Profile!" enabled="true" onClick="doClick"/> 
+			<Button platform="ios" id="btnCancel" title="Cancel" onClick="doClick"/> 
+		</View>
+	</Window>
+</Alloy>

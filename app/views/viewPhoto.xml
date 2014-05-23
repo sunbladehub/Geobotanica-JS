@@ -1,0 +1,7 @@
+<Alloy>
+	<Window onOpen="doWinOpen" onFocus="doWinFocus" onClose="doWinClose" onClick="doClick" navBarHidden="true" fullscreen="true"> <!-- navBarHidden ensures window is heavyweight -->
+		<ImageView id="imgPhoto">
+		<Label class="title" top="5%"></Label>
+		<Widget id="overlay" src="overlay">
+	</Window>
+</Alloy>

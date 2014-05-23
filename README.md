@@ -1,7 +1,25 @@
-Welcome to your Appcelerator Titanium Mobile Project
+Geobotanica
+===========
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

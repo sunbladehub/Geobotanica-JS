@@ -1,3 +1,5 @@
 module.exports = {
-    dependencies: {}
+    dependencies: {
+        overlay: "1.0"
+    }
 };

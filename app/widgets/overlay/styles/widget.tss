@@ -1,0 +1,55 @@
+
+
+"Label": {
+	// color: '#FFF',
+	font: {
+		fontSize: '12sp',
+		// fontWeight: 'bold'
+	},
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+}
+
+"Button": {
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    center: { x:'50%', y:'0' },
+    // borderRadius: 10, // Doesn't work on std button
+    // center: "50%",
+    // color: 'white',
+    // textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    // backgroundColor: 'transparent',
+    font: {
+  		fontFamily:'Helvetica',
+	    fontSize: '14sp',
+	    fontStyle: 'normal',
+	    fontWeight: 'normal'
+    },
+	// opacity:'1',
+}
+
+
+".viewBorder": {
+    width: 200,
+    // height: Ti.UI.SIZE,
+    backgroundColor: '#77777777', // with alpha AARRGGBB
+    borderColor: '#CCCCCC',
+    borderWidth: '2dp',
+    borderRadius: 10,
+    // opacity: '0.5',	// TODO: DON'T USE! (opacity of children ignored, specify in xml or something else?)
+}
+
+".viewMargin": {
+	top: '8dp',
+	bottom: '8dp',
+	left: '8dp',
+	right: '8dp',
+	layout: 'vertical',
+}
+
+// "Switch": { // TODO: Fix for iPhone (checkbox DNE + no text with checkbox, see docs)
+	// right: "5%",
+    // width: Ti.UI.SIZE,
+	// height: Ti.UI.SIZE,
+	// style: Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
+	// textAlign:Ti.UI.TEXT_ALIGNMENT_LEFT
+// }
